@@ -555,16 +555,15 @@ function gallery(){
 
 $(document).ready(gallery);
 $(document).ready(function(){
-  $("#home").particleground({
-    dotColor: '#ecf0f1',
-    lineColor: '#263142',
-    density:12000
+  // $("#home").particleground({
+    
+  //   density:15000
 
-  });
+  // });
 
  $('.type-it').typeIt({
   whatToType: ["Hello, I'm Varun."],
-  typeSpeed: 300,
+  typeSpeed: 200,
   lifeLike: true,
   breakLines: false,
   showCursor: true
