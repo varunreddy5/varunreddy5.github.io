@@ -190,7 +190,7 @@ _proto.processWhatToType = function() {
     this.stringArray = '["' + this.settings.whatToType + '"]';
     this.stringArray = JSON.parse(this.stringArray);
 
-    // if it is an array, clone it 
+    // if it is an array, clone it
   } else {
 
     // clone what to typed, so we don't modify the original strings in case we loop
@@ -257,7 +257,7 @@ _proto.validateCallbackFunction = function() {
   if(typeof this.callback === 'undefined') {
     this.callback = function(){return true;};
   }
-  
+
  };
 
  _proto.randomizeTypeSpeed = function() {
@@ -436,7 +436,7 @@ _proto.deleteLoop = function(undefined) {
     // convert to array
     this.arrayToDelete = (typeof this.arrayToDelete !== undefined) ? this.stringToDelete.split("") : [];
 
-    // loop over array 
+    // loop over array
     for (var n = this.arrayToDelete.length-1; n > -1; n--) {
 
       // TAG HANDLING
@@ -458,7 +458,7 @@ _proto.deleteLoop = function(undefined) {
           }
         }
         break;
-      } 
+      }
       // REGULAR CHARACTER HANDLING
       else {
         // remove the character and escape the loop
@@ -473,7 +473,7 @@ _proto.deleteLoop = function(undefined) {
     // if nothing left, clear out the emtpy HTML tags
     if(this.thisTiTextContainer.last().text().length === 0){
       this.thisTiTextContainer.last().html('');
-    } 
+    }
 
     // if characters are still in the string, run the function again
     if (this.thisTiTextContainer.last().text().length > 0) {
@@ -551,12 +551,14 @@ function gallery(){
    $('#songs').click(function(ev) { ev.preventDefault(); bootbox.alert('<h4 class="text-center">Dutch Top 2000 Songs</h4><hr><img class="img-responsive img-center" src="img/songs.png"><hr><p class="text-center"> </p><div class="col-md-offset-3 col-md-9"><a href="https://github.com/varunreddy5/dutchTop2000" target="_blank"><button type="button" class="btn btn-success">Github URL</button></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://varunreddy5.github.io/dutchTop2000" target="_blank"><button type="button" class="btn btn-danger">Launch Demo</button></a></div>'); });
   $('#meteor').click(function(ev) { ev.preventDefault(); bootbox.alert('<h4 class="text-center">Meteorites Landing</h4><hr><img class="img-responsive img-center" src="img/meteor.png"><hr><p class="text-center"> </p><div class="col-md-offset-3 col-md-9"><a href="https://github.com/varunreddy5/d3-freecodecamp-mapping" target="_blank"><button type="button" class="btn btn-success">Github URL</button></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://varunreddy5.github.io/d3-freecodecamp-mapping" target="_blank"><button type="button" class="btn btn-danger">Launch Demo</button></a></div>'); });
   $('#heat_map').click(function(ev) { ev.preventDefault(); bootbox.alert('<h4 class="text-center">Heat Map</h4><hr><img class="img-responsive img-center" src="img/heat_map.png"><hr><p class="text-center"> </p><div class="col-md-offset-3 col-md-9"><a href="https://github.com/varunreddy5/d3-freecodecamp-heatmap" target="_blank"><button type="button" class="btn btn-success">Github URL</button></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://varunreddy5.github.io/d3-freecodecamp-heatmap" target="_blank"><button type="button" class="btn btn-danger">Launch Demo</button></a></div>'); });
+  $('#job-board').click(function(ev) { ev.preventDefault(); bootbox.alert('<h4 class="text-center">Job Board</h4><hr><img class="img-responsive img-center" src="img/job_board.png"><hr><p class="text-center"> </p><div class="col-md-offset-3 col-md-9"><a href="https://github.com/varunreddy5/job-board" target="_blank"><button type="button" class="btn btn-success">Github URL</button></a>&nbsp;&nbsp;&nbsp;&nbsp;</div>'); });
+  $('#book-review').click(function(ev) { ev.preventDefault(); bootbox.alert('<h4 class="text-center">Book Review</h4><hr><img class="img-responsive img-center" src="img/job_board.png"><hr><p class="text-center"> </p><div class="col-md-offset-3 col-md-9"><a href="https://github.com/varunreddy5/book-review-app" target="_blank"><button type="button" class="btn btn-success">Github URL</button></a>&nbsp;&nbsp;&nbsp;&nbsp;</div>'); });
 }
 
 $(document).ready(gallery);
 $(document).ready(function(){
   // $("#home").particleground({
-    
+
   //   density:15000
 
   // });
@@ -571,11 +573,11 @@ $(document).ready(function(){
 
  $('#voiceModal').modal('show');
 
-new WOW().init(); 
+new WOW().init();
 
 $('#Container').mixItUp();
 
-$('[data-toggle="tooltip"]').tooltip(); 
+$('[data-toggle="tooltip"]').tooltip();
 
 
   $('nav a[href*=#], #home a[href*=#]').click(function() {
