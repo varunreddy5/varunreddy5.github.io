@@ -5890,7 +5890,7 @@
      background-size: cover;
      position: relative;
 }
- 
+
  #home .move-up-name {
      position: relative;
      top: 40vh;
@@ -6040,6 +6040,10 @@
  #portfolio {
      min-height: 1120px;
 }
+#portfolio img{
+  height: 265px !important;
+}
+
  #portfolio #Container .mix {
      display: none;
 }
@@ -6317,4 +6321,3 @@
      right: 50px;
      top: -90px;
 }
- 
