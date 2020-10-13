@@ -14,39 +14,39 @@ $(document).ready(function(){
   showCursor: true
 });
 
- $('#voiceModal').modal('show');
+//  $('#voiceModal').modal('show');
 
- if (annyang) {
-  var commands = {
-   'go to *term': function(term) {
-    console.log('Go to ' + term.toString());
-    $('#voice-' + term.toString() + ' a').click();
-  },
+//  if (annyang) {
+//   var commands = {
+//    'go to *term': function(term) {
+//     console.log('Go to ' + term.toString());
+//     $('#voice-' + term.toString() + ' a').click();
+//   },
 
-  ':projectCategory projects': function(projectCategory) {
-   console.log(projectCategory);
-   if(projectCategory.toString() == "all") {
-    console.log("See " + projectCategory.toString() + ' projects')
-    $("#all9").click();
-  } else if(projectCategory.toString().toLowerCase() == "html") {
-    console.log("See " + projectCategory.toString() + ' projects')
-    $("#html9").click();
-  } else if(projectCategory.toString().toLowerCase() == "javascript") {
-    console.log("See " + projectCategory.toString() + ' projects')
-    $("#javascript9").click();
-  } else if(projectCategory.toString().toLowerCase() == "rails") {
-    console.log("See " + projectCategory.toString() + ' projects')
-    $("#rails9").click();
-  } else if(projectCategory.toString().toLowerCase() == "angular") {
-    console.log("See " + projectCategory.toString() + ' projects')
-    $("#angular9").click();
-  }
-}
-};
-annyang.addCommands(commands);
+//   ':projectCategory projects': function(projectCategory) {
+//    console.log(projectCategory);
+//    if(projectCategory.toString() == "all") {
+//     console.log("See " + projectCategory.toString() + ' projects')
+//     $("#all9").click();
+//   } else if(projectCategory.toString().toLowerCase() == "html") {
+//     console.log("See " + projectCategory.toString() + ' projects')
+//     $("#html9").click();
+//   } else if(projectCategory.toString().toLowerCase() == "javascript") {
+//     console.log("See " + projectCategory.toString() + ' projects')
+//     $("#javascript9").click();
+//   } else if(projectCategory.toString().toLowerCase() == "rails") {
+//     console.log("See " + projectCategory.toString() + ' projects')
+//     $("#rails9").click();
+//   } else if(projectCategory.toString().toLowerCase() == "angular") {
+//     console.log("See " + projectCategory.toString() + ' projects')
+//     $("#angular9").click();
+//   }
+// }
+// };
+// annyang.addCommands(commands);
 
-annyang.start();
-}
+// annyang.start();
+// }
 
 new WOW().init();	
 
