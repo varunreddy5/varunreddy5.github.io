@@ -7297,16 +7297,16 @@ nav.pushy-open p {
   left: -5%;
   margin-bottom: 35px;
 }
-/*#skills .beetle {
-     position: relative;
-     left: 0%;
-     top: -58px;
-     animation: movecar 9s infinite;
-     -moz-animation: movecar 9s infinite;
-     -webkit-animation: movecar 9s infinite;
-     -o-animation: movecar 9s infinite;
+#skills .beetle {
+  position: relative;
+  left: 0%;
+  top: -119px;
+  animation: movecar 9s infinite;
+  -moz-animation: movecar 9s infinite;
+  -webkit-animation: movecar 9s infinite;
+  -o-animation: movecar 9s infinite;
 }
-*/
+
 #skills .move-up-skills {
   position: relative;
   margin-top: -240px;
