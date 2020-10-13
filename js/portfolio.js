@@ -23,7 +23,9 @@ function gallery(){
     $('#dnd-blocks').click(function(ev) { 
       ev.preventDefault(); 
       bootbox.alert('<h4 class="text-center">Drag and Drop Builder</h4><hr><img class="img-responsive img-center" src="img/dnd-blocks.png"><hr><p class="text-center">A Drag and Drop Builder built with Vanilla JavaScript</p><div class="col-md-offset-3 col-md-9"><a href="https://github.com/varunreddy5/drag-and-drop" target="_blank"><button type="button" class="btn btn-success">Github URL</button></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://dnd-blocks.surge.sh/" target="_blank"><button type="button" class="btn btn-danger">Launch Demo</button></a></div>'); });
-  
+    $('#you-search').click(function(ev) { 
+      ev.preventDefault(); 
+      bootbox.alert('<h4 class="text-center">YouSearch</h4><hr><img class="img-responsive img-center" src="img/you-search.png"><hr><p class="text-center">A Drag and Drop Builder built with Vanilla JavaScript</p><div class="col-md-offset-3 col-md-9"><a href="https://github.com/varunreddy5/YouSearch" target="_blank"><button type="button" class="btn btn-success">Github URL</button></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://varunreddy5.github.io/YouSearch" target="_blank"><button type="button" class="btn btn-danger">Launch Demo</button></a></div>'); });
   
 }
 
